@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/jose.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="images\tyler-franta-iusj25iyu1c-unsplash.jpg" id="slideimg" />
+        </div>
+        <div class="overlay">
+        <header id="myHeader">
+            <img class="logo" src="\images\remvback.png"><a href="#"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </header>
+        </div>
+        </div>
+        <div class="content">
+        <h1>Excellence in Auditing and Assurance</h1>
+        </div>
+        <div class="section">
+        <img src="\images\luca-bravo-9l_326fiszk-unsplash.jpg" id="slideimg" />
+        </div>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script>
+        var slideimg = document.getElementById("slideimg");
+
+        var Images = new Array(
+            "\Images\headway - 5QgIuuBxKwM - unsplash.jpg",
+            "\Images\domenico-loia-hGV2TfOh0ns-unsplash.jpg",
+            "\Images\carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg"
+        );
+
+        var len = Images.length;
+        var i = 0;
+
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+            slideimg.src = Images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+    </script>
+</body>
+</html>

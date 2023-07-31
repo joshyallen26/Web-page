@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap.css" />
+    <None Include="wwwroot\Images\20230703_093657_0000.png" />
+    <None Include="wwwroot\Images\ashraf-ali-JLW-T4LiJCw-unsplash.jpg" />
+    <None Include="wwwroot\Images\carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" />
+    <None Include="wwwroot\Images\charlesdeluvio-OqxPH8c1UFE-unsplash.jpg" />
+    <None Include="wwwroot\Images\domenico-loia-hGV2TfOh0ns-unsplash.jpg" />
+    <None Include="wwwroot\Images\firmbee-com-dAmHWsRYP9c-unsplash.jpg" />
+    <None Include="wwwroot\Images\headway-5QgIuuBxKwM-unsplash.jpg" />
+    <None Include="wwwroot\Images\luca-bravo-9l_326FISzk-unsplash.jpg" />
+    <None Include="wwwroot\Images\standsome-worklifestyle-LunwV7uPbeE-unsplash.jpg" />
+    <None Include="wwwroot\Images\tyler-franta-iusJ25iYu1c-unsplash.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\CSS\" />
+  </ItemGroup>
+
+</Project>
